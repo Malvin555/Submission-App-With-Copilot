@@ -197,7 +197,7 @@ export default function App() {
             title="Grimoire Folio: Fantasy Character Creator"
           >
             <img
-              src="/favicon.svg"
+              src={`${import.meta.env.BASE_URL}favicon.svg`}
               alt="Grimoire Crest"
               className="w-5 h-5 shrink-0 transition-transform duration-200 group-hover:scale-110"
             />
