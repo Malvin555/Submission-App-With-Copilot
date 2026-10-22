@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fantasy Character Creator</title>
+        <meta
+            name="description"
+            content="Generate unique fantasy heroes, champions, and scoundrels across 7 classic classes with rich lore and attributes."
+        />
+        <meta property="og:title" content="Fantasy Character Creator" />
+        <meta
+            property="og:description"
+            content="Generate unique fantasy heroes, champions, and scoundrels across 7 classic classes with rich lore and attributes."
+        />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.svg" />
+        <script>
+            window.addEventListener(
+                "error",
+                function (e) {
+                    if (
+                        e.message &&
+                        (e.message.includes("WebSocket") ||
+                            e.filename?.includes("@vite/client"))
+                    ) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        return true;
+                    }
+                },
+                true,
+            );
+            window.addEventListener(
+                "unhandledrejection",
+                function (e) {
+                    if (
+                        e.reason &&
+                        (e.reason.message?.includes("WebSocket") ||
+                            e.reason.stack?.includes("@vite/client"))
+                    ) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        return true;
+                    }
+                },
+                true,
+            );
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
+</html>
